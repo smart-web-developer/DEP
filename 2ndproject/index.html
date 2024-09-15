@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive UI Components</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>This is Task2</h1>
+        <h4>By Digital Empowerment Network</h4>
+    </header>
+
+    <!-- Slider Component -->
+    <section class="slider-container">
+        <input type="range" min="0" max="100" value="50" class="slider" id="slider">
+        <p>Slider Value: <span id="slider-value">50</span></p>
+    </section>
+
+    <!-- Modal Component -->
+    <section class="modal-section">
+        <button id="openModal">Open Modal</button>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>This is a modal window.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accordion Component -->
+    <section class="accordion-container">
+        <button class="accordion">Section 1</button>
+        <div class="panel">
+            <p>Content for section 1.</p>
+        </div>
+
+        <button class="accordion">Section 2</button>
+        <div class="panel">
+            <p>Content for section 2.</p>
+        </div>
+
+        <button class="accordion">Section 3</button>
+        <div class="panel">
+            <p>Content for section 3.</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
