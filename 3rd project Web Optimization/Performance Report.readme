@@ -1,0 +1,54 @@
+                               Performance Optimization Report
+
+Introduction:
+This project features an interactive web page that includes UI components such as a slider, modal, and accordion. The objective of this report is to detail the performance optimizations conducted on the website using Google Lighthouse to enhance its performance, accessibility, best practices, and SEO.
+
+Initial Analysis:
+Before optimization, the website was audited using Google Lighthouse. The initial scores were as follows:
+Performance: 90
+Accessibility: 87
+Best Practices: 78
+SEO: 81
+Major Issues Found:
+
+Unoptimized images leading to increased load times.
+Lack of ARIA attributes for better accessibility.
+Non-responsive images causing layout issues on smaller screens.
+JavaScript files were blocking rendering.
+
+Optimization Steps:
+The following steps were taken to optimize the website:
+
+Minimized HTTP Requests:
+Combined CSS and JavaScript files where applicable.
+Removed unnecessary scripts and styles.
+
+Optimized Images:
+Compressed images using TinyPNG.
+Converted images to next-gen formats (WebP) where possible.
+Ensured images were set with appropriate dimensions to prevent resizing in the browser.
+
+Implemented Lazy Loading:
+Added the loading="lazy" attribute to <img> tags to defer offscreen images.
+Used the defer attribute in <script> tags to delay loading non-essential scripts until after the document has been parsed.
+
+Accessibility Improvements:
+Added ARIA attributes (aria-labelledby, aria-hidden, aria-expanded, etc.) to enhance screen reader support.
+Included visually hidden headings for better semantic structure.
+
+Final Analysis:
+After implementing the optimizations, the website was audited again using Google Lighthouse. The new scores were as follows:
+
+Performance: 100
+Accessibility: 93
+Best Practices: 96
+SEO: 91
+
+Comparison of Scores:
+Performance: Increased from 90 to 100.
+Accessibility: Improved from 87 to 93.
+Best Practices: Enhanced from 78 to 96.
+SEO: Elevated from 81 to 91.
+
+Conclusion:
+The performance optimizations significantly improved the website's Lighthouse scores, indicating a more efficient and user-friendly experience. Key improvements included faster load times due to optimized images, enhanced accessibility through ARIA attributes, and better overall practices that ensure the site adheres to modern web standards. This project exemplifies the importance of regular performance audits and optimizations in web development.
